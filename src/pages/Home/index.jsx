@@ -35,7 +35,7 @@ export default function ChampionshipMenu() {
             <ChampionshipContainer>
                 <h1>Campeonatos</h1>
                 {campeonatos.map((campeonato) => (
-                    <ChampionshipButton key={campeonato.id}>
+                    <ChampionshipButton key={campeonato.id} to={'/campeonato/' + campeonato.id}>
                         {campeonato.nome}
                     </ChampionshipButton>
                 ))}
