@@ -13,9 +13,9 @@ export default function AppRoutes() {
       <Container />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/campeonato" element={<Campeonato />} />
-          <Route path="/campeonato/jogador" element={<Jogador />} />
-          <Route path="/campeonato/rodada" element={<Rodada />} />
+          <Route path="/campeonato/:id" element={<Campeonato />} />
+          <Route path="/campeonato/:id/jogadores" element={<Jogador />} />
+          <Route path="/campeonato/:id/rodada" element={<Rodada />} />
           <Route path="/campeonato/rodadaIn" element={<RodadaIn />} />
           <Route path="/login" element={<Login />} />
         </Routes>

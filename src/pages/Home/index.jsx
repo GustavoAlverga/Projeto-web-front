@@ -1,6 +1,6 @@
+import { Container, ChampionshipContainer, ChampionshipButton } from './styles';
 import { useEffect, useState } from 'react';
 import api from '../../services/api';
-import { Container, ChampionshipContainer, ChampionshipButton } from './styles';
 
 export default function ChampionshipMenu() {
     const [campeonatos, setCampeonatos] = useState([]); 
@@ -34,15 +34,11 @@ export default function ChampionshipMenu() {
         <Container>
             <ChampionshipContainer>
                 <h1>Campeonatos</h1>
-                {campeonatos.length > 0 ? (
-                    campeonatos.map((campeonato) => (
-                        <ChampionshipButton key={campeonato.id}>
-                            {campeonato.nome}
-                        </ChampionshipButton>
-                    ))
-                ) : (
-                    <p>Nenhum campeonato encontrado.</p> 
-                )}
+                {campeonatos.map((campeonato) => (
+                    <ChampionshipButton key={campeonato.id}>
+                        {campeonato.nome}
+                    </ChampionshipButton>
+                ))}
             </ChampionshipContainer>
         </Container>
     );

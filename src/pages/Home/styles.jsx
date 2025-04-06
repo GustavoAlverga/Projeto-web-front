@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
   display: flex;
@@ -18,7 +19,7 @@ export const ChampionshipContainer = styled.div`
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
-export const ChampionshipButton = styled.button`
+export const ChampionshipButton = styled(NavLink)`
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -27,6 +28,7 @@ export const ChampionshipButton = styled.button`
   border: none;
   font-size: 1rem;
   font-weight: bold;
+  text-align: center;
   cursor: pointer;
   border-radius: 5px;
   transition: 0.3s;
