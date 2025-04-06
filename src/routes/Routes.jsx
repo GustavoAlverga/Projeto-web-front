@@ -14,9 +14,9 @@ export default function AppRoutes() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/campeonato" element={<Campeonato />} />
-          <Route path="/capeonato/jogador" element={<Jogador />} />
+          <Route path="/campeonato/jogador" element={<Jogador />} />
           <Route path="/campeonato/rodada" element={<Rodada />} />
-          <Route path="/campeonato/raodadaIn" element={<RodadaIn />} />
+          <Route path="/campeonato/rodadaIn" element={<RodadaIn />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
